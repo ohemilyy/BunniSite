@@ -1,0 +1,25 @@
+.Links {
+    display: flex;
+}
+
+.DynamicRow {
+    display: flex;
+    margin-top: 2%;
+}
+
+.LinksMember {
+    flex: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.LinksColour {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .DynamicRow {
+        display: flex;
+        margin-top: 5%;
+    }
+}
