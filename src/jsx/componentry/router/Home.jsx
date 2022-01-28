@@ -1,6 +1,6 @@
 import { Tooltip } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faGithub, faLastfm } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faGithub} from "@fortawesome/free-brands-svg-icons";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 import { useState, useEffect } from "react";
@@ -9,7 +9,7 @@ import ConfigurationFetch from "../../../lib/ConfigurationFetch.js";
 export default function Home() {
     const [spotifyString, setSpotifyString] = useState("Not listening");
     const [discordString, setDiscordString] = useState("Offline");
-    const [lastFmStyle, setLastFmStyle] = useState({ color: "white" });
+    const [setLastFmStyle] = useState({ color: "white" });
     const [discordStyle, setDiscordStyle] = useState({ color: "white" });
 
     useEffect(() => {
