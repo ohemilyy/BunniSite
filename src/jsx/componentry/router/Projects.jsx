@@ -14,7 +14,7 @@ export default function Projects() {
 
                     <ProjectCard.Link>https://bunni.me/</ProjectCard.Link>
 
-                    <ProjectCard.Image>https://github.com/ItzBunniYT/BunniSite/blob/main/public/assets/img/icon.png</ProjectCard.Image>
+                    <ProjectCard.Image>https://cdn.discordapp.com/attachments/888503734248812594/936737240573435974/retard.png</ProjectCard.Image>
 
                     <ProjectCard.ImageDescription>Bunni logo</ProjectCard.ImageDescription>
                     
