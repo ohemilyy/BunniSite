@@ -9,7 +9,6 @@ import ConfigurationFetch from "../../../lib/ConfigurationFetch.js";
 export default function Home() {
     const [spotifyString, setSpotifyString] = useState("Not listening");
     const [discordString, setDiscordString] = useState("Offline");
-    const [setLastFmStyle] = useState({ color: "white" });
     const [discordStyle, setDiscordStyle] = useState({ color: "white" });
 
     useEffect(() => {
@@ -17,7 +16,6 @@ export default function Home() {
             const configuration = await ConfigurationFetch();
             fetch(configuration.api.basePath + "/internal/bunni/spotify").then(response => response.json()).then(data => {
                 setSpotifyString(data.response.listening ? `${data.response.title} by ${data.response.artist}` : "Not listening");
-                setLastFmStyle(data.response.listening ? { color: "D51007" } : { color: "white" });
             }).catch(error => {
                 console.error("Error fetching Spotify data:", error);
             });
