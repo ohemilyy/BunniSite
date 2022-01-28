@@ -1,7 +1,17 @@
 {
-  "name": "danny.works",
-  "version": "9.0.0",
+  "name": "bunni.me",
+  "version": "4.0.0",
   "private": true,
+  "contributors": [
+    {
+      "name": "Daniel Hyders",
+      "email": "git@danny.works"
+    },
+    {
+      "name": "Emily",
+      "email": "emily@bunni.me"
+    }
+  ],
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
