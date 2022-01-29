@@ -4,7 +4,6 @@ import { faDiscord, faGithub} from "@fortawesome/free-brands-svg-icons";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 import { useState, useEffect } from "react";
-import { Fade } from "react-awesome-reveal";
 
 import ConfigurationFetch from "../../../lib/ConfigurationFetch.js";
 
