@@ -1,6 +1,9 @@
 import { ProjectCard } from "../Card";
+import { Zoom } from "react-awesome-reveal";
+
 export default function Projects() {
     return (
+        <Zoom>
         <div className="flex gap-y-6 flex-col py-12 h-screen items-center bg-gray-900 text-center">
             <h1 className="Header">Projects</h1>
             <h2 className="Tagline">A few projects and small software utilities of mine. Some are big, some are small.</h2>
@@ -87,5 +90,7 @@ export default function Projects() {
 
             </div>
         </div>
+    
+        </Zoom>
     );
 };

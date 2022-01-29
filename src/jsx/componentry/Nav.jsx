@@ -12,6 +12,7 @@ const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Resume', href: 'https://docs.google.com/document/d/1YT7uTUd8fQ7CxjkY1yBdSgMqgT-99aL2BEAof-b1670/', current: false, disabled: false, external: true },
   { name: 'Projects', href: '/projects', current: false, disabled: false },
+  { name: 'Experience', href: '/experience', current: false, disabled: false },
 ];
 
 function classNames(...classes) {
@@ -29,6 +30,7 @@ export default function Nav() {
         else return setBannerStatus(true);
     })();
   }, []);
+  
 
   
   return (
@@ -85,7 +87,7 @@ export default function Nav() {
                   type="button"
                   target="_blank"
                   rel="noreferrer noopener"
-                  href="https://github.com/ItzBunniYT/website"
+                  href="https://github.com/Dannnington/website"
                   className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>

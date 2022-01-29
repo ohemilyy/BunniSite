@@ -4,6 +4,8 @@ import { faDiscord, faGithub} from "@fortawesome/free-brands-svg-icons";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 import { useState, useEffect } from "react";
+import { Fade } from "react-awesome-reveal";
+
 import ConfigurationFetch from "../../../lib/ConfigurationFetch.js";
 
 export default function Home() {
@@ -45,7 +47,8 @@ export default function Home() {
             return () => clearInterval(interval);
     }, []);
 
-    return (
+
+        return (
         <div>
             <div className="PageBannerPhoto" style={{ zIndex: "0" }}>
                 <video src="/assets/mp4/watercolour.mp4" autoPlay={true} muted={true} loop={true} style={{ zIndex: "-1", position: "absolute" }} className="hidden sm:block" />
@@ -80,5 +83,8 @@ export default function Home() {
                 </div>
             </div> 
         </div>
+
     );
+
+
 };
