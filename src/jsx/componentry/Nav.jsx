@@ -12,6 +12,7 @@ const navigation = [
   { name: 'Resume', href: 'https://docs.google.com/document/d/1YT7uTUd8fQ7CxjkY1yBdSgMqgT-99aL2BEAof-b1670/', current: false, disabled: false, external: true },
   { name: 'Projects', href: '/projects', current: false, disabled: false },
   { name: 'Experience', href: '/experience', current: false, disabled: false },
+  { name: 'Contact', href: '/contact', current: false, disabled: false },
 ];
 
 function classNames(...classes) {
