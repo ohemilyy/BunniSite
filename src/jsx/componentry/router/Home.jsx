@@ -1,6 +1,6 @@
 import { Tooltip } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faGithub} from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faGithub, faTelegram} from "@fortawesome/free-brands-svg-icons";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 import { useState, useEffect } from "react";
@@ -72,6 +72,11 @@ export default function Home() {
                     <Tooltip title={`Discord: ${discordString}`} placement="top">
                         <a target="_blank" rel="noreferrer noopener" href="https://discords.com/bio/p/qtemilyy">
                             <FontAwesomeIcon size="2x" icon={faDiscord} style={discordStyle} />
+                        </a>
+                    </Tooltip>
+                    <Tooltip title="Telegram" placement="top">
+                        <a target="_blank" rel="noreferrer noopener" href="https://t.me/ChaosLOL">
+                            <FontAwesomeIcon size="2x" icon={faTelegram} color="white" />
                         </a>
                     </Tooltip>
                     <Tooltip title={`Spotfy: ${spotifyString}`} placement="top">
