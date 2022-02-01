@@ -55,7 +55,7 @@ export default function Home() {
                 <h1 className="PageBanner" style={{ zIndex: "1" }}>Home</h1>
             </div>
             <div className="flex gap-y-6 flex-col py-6 h-screen items-center bg-gray-900">
-                <img src="https://cdn.discordapp.com/avatars/869311033351749632/e25182db0f5cfda719f49eb11ecaf48b.png?size=2048" alt="My icon" className="w-64 h-64 mt-12 bg-gray-800" style={{ borderRadius: "50%" }} />
+                <img src="https://cdn.discordapp.com/attachments/887195868913082429/937831161672118442/Final_v2_.png" alt="My icon" className="w-64 h-64 mt-12 bg-gray-800" style={{ borderRadius: "50%" }} />
                 <h1 className="Header">Emily // Bunni</h1>
                 <h2 className="Tagline">CyberSecurity Analyst, Cyber Threat Intelligence, System Administrator, Java and Kotlin Software Developer</h2>
                 <div className="flex gap-x-6">
