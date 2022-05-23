@@ -73,6 +73,22 @@ export default function Projects() {
                 </ProjectCard>
 
                 <ProjectCard>
+                    <ProjectCard.Title>EstaLand</ProjectCard.Title>
+
+                    <ProjectCard.Description>
+                        Minecraft Network. I am the Manager/PlatformAdmin of the Network as well as the Systems Administrator.
+                    </ProjectCard.Description>
+
+                    <ProjectCard.Link>https://esta.land/</ProjectCard.Link>
+
+                    <ProjectCard.Image>https://cdn.discordapp.com/attachments/912828910012620830/976870776391233586/esta.png</ProjectCard.Image>
+
+                    <ProjectCard.ImageDescription>Esta logo</ProjectCard.ImageDescription>
+                    
+                    <ProjectCard.ButtonText>Website</ProjectCard.ButtonText>
+                </ProjectCard>
+
+                <ProjectCard>
                     <ProjectCard.Title>MineRIP</ProjectCard.Title>
 
                     <ProjectCard.Description>

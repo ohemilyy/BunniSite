@@ -4,6 +4,8 @@ import Projects from "./componentry/router/Projects.jsx";
 import Experience from "./componentry/router/Experience.jsx";
 import Contact from "./componentry/router/Contact.jsx";
 import NotFound from "./componentry/router/404.jsx";
+import Prices from "./componentry/router/Prices.jsx";
+import FAQ from "./componentry/router/FAQ.jsx";
 import "./css/Core.css";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
           <Route path="experience" element={<Experience />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="FAQ" element={<FAQ />} />
+          <Route path="Prices" element={<Prices />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Outlet />
