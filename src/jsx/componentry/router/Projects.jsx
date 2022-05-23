@@ -33,7 +33,7 @@ export default function Projects() {
 
                     <ProjectCard.Link>https://scala.gg/</ProjectCard.Link>
 
-                    <ProjectCard.Image>https://pbs.twimg.com/profile_images/1469410563939835911/FDMrzgeZ_400x400.jpg</ProjectCard.Image>
+                    <ProjectCard.Image>https://cdn.discordapp.com/attachments/879594788909891627/978399046605623376/unknown.png</ProjectCard.Image>
 
                     <ProjectCard.ImageDescription>Scala logo</ProjectCard.ImageDescription>
                     
