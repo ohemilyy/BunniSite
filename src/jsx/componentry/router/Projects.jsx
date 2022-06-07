@@ -55,7 +55,21 @@ export default function Projects() {
 
                     <ProjectCard.ButtonText>Website</ProjectCard.ButtonText>
                 </ProjectCard>
+                <ProjectCard>
+                        <ProjectCard.Title>Hydrabank</ProjectCard.Title>
 
+                        <ProjectCard.Description>
+                            We can handle your web application development and systems infrastructure management. That way, you can focus on what you do best - running your own business.
+                        </ProjectCard.Description>
+
+                        <ProjectCard.Link>https://hydrabank.systems</ProjectCard.Link>
+
+                        <ProjectCard.Image>/assets/img/projects/hydrabank.png</ProjectCard.Image>
+
+                        <ProjectCard.ImageDescription>Hydrabank wave</ProjectCard.ImageDescription>
+                        
+                        <ProjectCard.ButtonText>Website</ProjectCard.ButtonText>
+                    </ProjectCard>
                 <ProjectCard>
                     <ProjectCard.Title>Nexus</ProjectCard.Title>
 
