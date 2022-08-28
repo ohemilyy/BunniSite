@@ -15,7 +15,7 @@ let titles = [
   "a cyber security specialist"
 ];
 
-export default function Home({ title, avatar }) {
+export default function Home() {
   const [spotify, setSpotify] = useState({ listening: false, title: null, artist: "" });
   const [discord, setDiscord] = useState({ 
     status: {
@@ -26,13 +26,22 @@ export default function Home({ title, avatar }) {
       active: false
     }
   });
+  
+  const [avatar, setAvatar] = useState({
+    src: "/coffeedog.png",
+    loading: true
+  });
 
   useEffect(() => {
     async function getSpotify() {
       const res = await fetch(`${env.info.api}/internal/bunni/spotify`).then(res => res.json()).catch(e => {
         return {
           status: 500,
-          response: {}
+          response: {
+            listening: false,
+            title: null,
+            artist: null
+          }
         };
       });
       
@@ -50,7 +59,23 @@ export default function Home({ title, avatar }) {
       const res = await fetch(`${env.info.api}/internal/bunni/status`).then(res => res.json()).catch(e => {
         return {
           status: 500,
-          response: {}
+          response: {
+            "status": 200,
+            "response": {
+              "general": {
+                "type": "offline",
+                "colour": "747F8D"
+              },
+              "custom": null,
+              "richPresence": [
+                
+              ],
+              "code": {
+                "file": null,
+                "workspace": null
+              }
+            }
+          }
         };
       });
 
@@ -66,8 +91,23 @@ export default function Home({ title, avatar }) {
       };
     };
 
+    async function getAvatar() {
+      const discordAvatar = await fetch(`${env.info.api}/internal/bunni/avatar`).then(res => res.json()).catch(e => {
+        return {
+          status: 500,
+          response: "/coffeedog.png"
+        }
+      });
+
+      setAvatar({
+        src: discordAvatar.response,
+        loading: false
+      });
+    };
+
     getSpotify();
     getDiscord();
+    getAvatar();
 
   }, []);
 
@@ -75,11 +115,11 @@ export default function Home({ title, avatar }) {
     <>
       <div className="px-4 sm:px-0 sm:flex flex-col gap-x-4 gap-y-4 justify-center items-center h-[50vh]">
         <div className="px-24 sm:px-16 flex flex-col sm:flex-row items-center justify-center sm:justify-around sm:w-[80%] gap-x-8 gap-y-8">
-          <Image alt="Avatar" className="w-auto sm:w-24 md:w-36 rounded-full" src={avatar} width={128} height={128} />
+          <Image alt="Avatar" className={`w-auto sm:w-24 md:w-36 rounded-full ${avatar.loading ? "animate-pulse bg-gray-100" : ""}`} src={avatar.loading ? "/whitebg.png" : avatar.src} width={128} height={128} />
           <div className="flex flex-col gap-y-4 sm:gap-y-2">
             <h1 className="font-AegixHeader text-4xl font-bold text-center sm:text-right">{env.info.name}</h1>
             <h2 className="font-AegixSubheader text-center sm:text-right">
-            👋 I can do a lot of things, but I&apos;m mainly <br />a <b>Software Developer</b> and <b>a Systems Admin</b>.
+              I can do a lot of things, but I&apos;m mainly <br />a <b>web designer</b> and <b>a journalism student</b>.
             </h2>
             <div className="flex flex-row gap-x-4 text-2xl justify-center sm:justify-end items-center">
               <SocialLink 
@@ -117,7 +157,7 @@ export default function Home({ title, avatar }) {
                 className={
                   discord.code.active ? "text-code-default hover:text-code-darker"
                   :
-                  `${discord.status.type === "offline" ? "hover:text-gray-300" : `${env.discord.discordColourMap[discord.status.type].default} ${env.discord.discordColourMap[discord.status.type].hover}`}`
+                  `${discord.status.type === "offline" ? "hover:text-gray-300" : `${env.discord.discordColourMap[discord.status.type]?.default} ${env.discord.discordColourMap[discord.status.type]?.hover}`}`
                 } 
               />
               <SocialLink href={links.spotify}
@@ -137,21 +177,4 @@ export default function Home({ title, avatar }) {
       </div>
     </>
   );
-};
-
-
-export async function getServerSideProps() {
-  const discordAvatar = await fetch(`${env.info.api}/internal/bunni/avatar`).then(res => res.json()).catch(e => {
-    return {
-      status: 500,
-      response: null
-    }
-  });
-  
-  return {
-    props: {
-      title: titles[Math.floor(Math.random() * titles.length)],
-      avatar: discordAvatar.response
-    }
-  }
 };

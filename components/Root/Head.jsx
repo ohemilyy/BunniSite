@@ -18,7 +18,7 @@ export default function Head() {
     const [title, setTitle] = useState(env.info.name);
 
     useEffect(() => {
-        if (router.pathname === '/_error') {
+        if (router.pathname === '/_error' || router.pathname === "/404") {
             setDisabledNav(true);
             setTitle(`Oops! 404. - ${env.info.name}`);
         } else {
@@ -85,7 +85,7 @@ export default function Head() {
                                                         <Link href="/">
                                                             <a className={`
                                                                 ${router.pathname === path ? 'bg-slate-800' : 'hover:bg-slate-700'} 
-                                                                ${router.pathname === "/_error" ? "bg-slate-900 hover:bg-slate-800" : ""} 
+                                                                ${(router.pathname === "/_error" || router.pathname === "/404") ? "bg-slate-900 hover:bg-slate-800" : ""} 
                                                                 text-gray-100 font-AegixHeader font-bold text-lg px-4 py-2 rounded-xl
                                                                 transition ease-in-out duration-250
                                                                 hidden sm:flex flex-row items-center gap-x-2

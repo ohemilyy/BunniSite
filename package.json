@@ -1,12 +1,7 @@
 {
   "name": "website",
-  "version": "11.0.3",
-  "author": {
-    "name": "Danny H.",
-    "email": "git@danny.works"
-  },
-  "homepage": "https://danny.works",
-  "description": "The repository for danny.works. Written in Next.js.",
+  "page": "https://bunni.me",
+  "description": "The repository for bunni.me. Written in Next.js.",
   "private": true,
   "scripts": {
     "dev": "next dev",

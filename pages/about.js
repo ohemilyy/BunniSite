@@ -27,7 +27,7 @@ export default function Portfolio() {
                     </Link>.
                     But when it comes to software/application development, I work with Kotlin or Java and frames works like {" "}
                     <Link href="https://spring.io/projects/spring-boot">
-                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
+                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400 hover:text-blue-500 transition ease-in-out duration-250 bg-slate-900"> 
                             <FontAwesomeIcon icon={faJava} className="w-5" /> Spring and ktor
                         </a>
                         </Link>. When it is not development related you can find me working in the Cyber Security field. I have a passion for Threat Intelligence and System Administration and some times Ethical Hacking.
@@ -77,7 +77,7 @@ export default function Portfolio() {
                     If you would like to contact me regarding a potential web design commission, backend project, you should see the
                     {" "}
                     <Link href="https://hydrabank.systems">
-                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
+                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400 hover:text-blue-500 transition ease-in-out duration-250 bg-slate-900"> 
                             Hydrabank
                         </a>
                     </Link>
@@ -86,13 +86,13 @@ export default function Portfolio() {
                     <br /> <br />
                     For other commissions (e.g. minecraft development, management, system administration), business enquiries, or if you just want to say hello - you can reach me at{" "}
                     <Link href={links.email}>
-                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
+                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400 hover:text-blue-500 transition ease-in-out duration-250 bg-slate-900"> 
                             <FontAwesomeIcon icon={faEnvelope} className="w-5" /> ohemilyy@proton.me
                         </a>
                     </Link>.
                     You can also reach me via <br />
                     <Link href={links.discord}>
-                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
+                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400 hover:text-blue-500 transition ease-in-out duration-250 bg-slate-900"> 
                             <FontAwesomeIcon icon={faDiscord} className="w-5" /> Discord (always active)
                         </a>
                     </Link> if you need live communication.
