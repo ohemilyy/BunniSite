@@ -1,7 +1,0 @@
-{
-    "--README!": "Read config/config.example.js for more information",
-    "development": false,
-    "api": {
-        "basePath": "https://api.bunni.me"
-    }
-}

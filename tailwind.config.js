@@ -1,14 +1,32 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}"
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  safelist: [
+    {
+      pattern: /text-(.+)-(.+)/,
+    },
+    {
+      pattern: /bg-(.+)-(.+)/,
+    }
   ],
   theme: {
     extend: {
       fontFamily: {
-        "BreezeHeader": ["Red Hat Display"],
-        "BreezeText": ["Readex Pro"]
+        "AegixHeader": ["Gilroy"],
+        "AegixSubheader": ["Readex Pro"],
+        "AegixText": ["Readex Pro"],
+        "AegixMono": ["Space Mono"]
+      },
+      colors: {
+        code: {
+          default: "#22a6f1",
+          darker: "#1d9ff0"
+        }
       }
     },
   },
-  plugins: [],
-};
+  plugins: [require("@tailwindcss/aspect-ratio")],
+}
