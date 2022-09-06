@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { faHome } from "@fortawesome/free-solid-svg-icons"
+
 export default function NotFoundError() {
     return (
         <div className="px-12 flex flex-col gap-x-4 gap-y-8 items-center justify-center">
