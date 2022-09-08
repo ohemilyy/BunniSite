@@ -119,7 +119,7 @@ export default function Home() {
           <div className="flex flex-col gap-y-4 sm:gap-y-2">
             <h1 className="font-AegixHeader text-4xl font-bold text-center sm:text-right">{env.info.name}</h1>
             <h2 className="font-AegixSubheader text-center sm:text-right">
-              I can do a lot of things, but I&apos;m mainly <br />a <b>web designer</b> and <b>a journalism student</b>.
+              I can do a lot of things, but I&apos;m mainly <br />a <b>Software Developer</b> and <b>a Systems Administrator</b>.
             </h2>
             <div className="flex flex-row gap-x-4 text-2xl justify-center sm:justify-end items-center">
               <SocialLink 
