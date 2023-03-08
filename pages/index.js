@@ -174,7 +174,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <iframe class="discord" src="https://discordapp.com/widget?id=1082749720872636518&theme=dark"/>
+        <iframe className="discord" src="https://discordapp.com/widget?id=1082749720872636518&theme=dark"/>
 
       </div>
     </>
