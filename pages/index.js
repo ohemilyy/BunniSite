@@ -114,7 +114,7 @@ export default function Home() {
   return (
     <>
       <div className="px-4 sm:px-0 sm:flex flex-col gap-x-4 gap-y-4 justify-center items-center h-[50vh]">
-        <div className="px-24 sm:px-16 flex flex-col sm:flex-row items-center justify-center sm:justify-around sm:w-[80%] gap-x-8 gap-y-8">
+        <div className="px-24 card sm:px-16 flex flex-col sm:flex-row items-center justify-center sm:justify-around sm:w-[80%] gap-x-8 gap-y-8">
           <Image alt="Avatar" className={`w-auto sm:w-24 md:w-36 rounded-full ${avatar.loading ? "animate-pulse bg-gray-100" : ""}`} src={avatar.loading ? "/whitebg.png" : avatar.src} width={128} height={128} />
           <div className="flex flex-col gap-y-4 sm:gap-y-2">
             <h1 className="font-AegixHeader text-4xl font-bold text-center sm:text-right">{env.info.name}</h1>
@@ -142,7 +142,7 @@ export default function Home() {
                 }
                 icon={faGithub} 
               />
-              <SocialLink 
+                            <SocialLink 
                 href={links.discord}
                 icon={faDiscord}
                 tooltipColour={discord.code.active ? "#0078b9" : "#1e293b"}
@@ -174,6 +174,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <iframe class="discord" src="https://discordapp.com/widget?id=1082749720872636518&theme=dark"/>
+
       </div>
     </>
   );
