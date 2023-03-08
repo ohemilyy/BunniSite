@@ -47,7 +47,14 @@
     --card-width: calc(var(--card-height) / 1.5);
   }
   
-  
+  html {
+    @apply bg-slate-900;
+}
+
+:root {
+    color-scheme: dark;
+}
+
   body {
     min-height: 100vh;
     background: #212534;
